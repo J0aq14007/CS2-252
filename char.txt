@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int val1 = 20;
+    float val2 = 8;
+    int suma = val1+val2;
+    int resta = val1-val2;
+    int mult = val1*val2;
+    int div = val1/val2;
+
+    cout<<suma<<endl;
+    cout<<resta<<endl;
+    cout<<mult<<endl;
+    cout<<div<<endl;
+
+    unsigned short val3 = 65534;
+    cout<<val3<<endl;
+    val3 = val3+1;
+    cout<<val3<<endl;
+
+    char car = 'A';
+    int val = static_cast<int>(car);
+    cout<<sizeof(val)<<endl;
+    cout<<val<<endl;
+
+    char car0 = '*':
+    int val = static_cast<int>(car0);
+    cout<<sizeof(val)<<endl;
+
+
+    return 0;
+}
