@@ -12,8 +12,8 @@ int main()
        div
        modulo
     */
-    int result1 = val%10;
-    int result2 = val/10;
+    int result1 = a%10;
+    int result2 = a/10;
 
     /**
        Implementa un programa que reciba por teclado un numero de 4 digitos
@@ -27,12 +27,14 @@ int main()
          6
     */
 
-       int n; cin>>n;
+       cout<<"Ingrese un numero"<<endl;
+       int n; cin>>n;  //declarando
        int m = n / 1000;
        int c = (n%1000)/100;
-       int d = ((n%1000) % 100 ) /10;
-       int u = ((n%1000)  %100) % 10;
+       int d = (n%100) /10;
+       int u = n% 10;
 
+       cout<<"El numero ingresado descompuesto es asi: ";
        cout<<m<<endl;
        cout<<c<<endl;
        cout<<d<<endl;
