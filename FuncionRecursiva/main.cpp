@@ -57,7 +57,7 @@ ll ContarDigitos(long n){
    n = 445544
    Es capicua
 
-**/
+**
 ll Capicua(long n){
 
   if(n<10) return "Es capicua";
@@ -70,7 +70,7 @@ ll Capicua(long n){
      4114
 }
 
-
+**/
 int main()
 {
     /**
@@ -79,6 +79,6 @@ int main()
 
     cout<<ContarDigitos(222000444);
     */
-    cout<<Capicua(232)<<endl;
+    //cout<<Capicua(232)<<endl;
     return 0;
 }

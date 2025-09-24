@@ -11,12 +11,23 @@ int suma_arr(int arr[], int tam){
     int sum=0;
     for(int i=0; i<5; i++){
         sum+= arr[i];
-    }return sum;
+    }
+    return sum;
 
 
 }
 
+/* Funcion recursiva de suma de elementos de un array*/
+int recursion_sum_arr(int arr[], int tam){
 
+
+    if(tam == 0) { return; }
+    else{
+
+        return arr[tam-1] + recursion_sum_arr(arr, tam-1);
+    }
+
+}
 
 
 int main()
@@ -46,6 +57,6 @@ int main()
         cout<< arr[4]<<endl;
 
    cout<<suma_arr(arr,5)<<endl;
-
+   cout<<recursion_sum_arr(arr,5)<<endl;
     return 0;
 }
