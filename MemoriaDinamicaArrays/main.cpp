@@ -42,7 +42,10 @@ int bubble(int *ptr, int tam){
         }
     }
 }
+/**
+insertion, merge, quick
 
+**/
 int main()
 {
     int *ptr = new int[5];
