@@ -48,11 +48,11 @@ insertion, merge, quick
 
 void insertion(int *ptr, int tam){
 
-    for(int j = 1; j < tam; j++){ 
+    for(int j = 1; j < tam; j++){
          int key = ptr[j];
          int i;
-         
-         for(int i= j-1; i>0 && ptr[i] > key; i--){
+
+         for( i= j-1; i>0 && ptr[i] > key; i--){
              ptr[i+1] = ptr[i];
          }
          ptr[i+1] = key;
@@ -61,17 +61,17 @@ void insertion(int *ptr, int tam){
 }
 
 void quick(int *ptr, int tam){
-     
+
      int i = 0;
      while (i < tam - 1) {
-        int pivote = ptr[tam - 1]; 
+        int pivote = ptr[tam - 1];
         int j = i;
         int k = tam - 2;
 
         while (j <= k) {
-        
+
             if (ptr[j] > pivote && ptr[k] < pivote){
-            
+
                 swap(&ptr[j+1], &ptr[k-1]);
             }
             else if (ptr[j] <= pivote){
@@ -81,15 +81,15 @@ void quick(int *ptr, int tam){
                 k--;
             }
         }
-        swap(&ptr[j], &ptr[tam - 1]); 
-        tam--; 
+        swap(&ptr[j], &ptr[tam - 1]);
+        tam--;
     }
 
 }
 
 void merge(int *ptr, int tam){
 
-     
+
 }
 int main()
 {
@@ -114,30 +114,30 @@ int main()
         cout<<ptr[i]<<" ";
     }
     cout<<endl;
-    
+
     for(int i=0; i<5; i++){
         ptr[i] = tam-i;
     }
-    
+
     insertion(ptr, tam);
      cout<<"INSERTION"<<endl;
     for(int i=0; i<5; i++){
         cout<<ptr[i]<<" ";
     }
     cout<<endl;
-    
+
     for(int i=0; i<5; i++){
         ptr[i] = tam-i;
     }
-    
+
     quick(ptr,tam);
     cout<<"QUICK"<<endl;
     for(int i=0; i<5; i++){
         cout<<ptr[i]<<" ";
     }
     cout<<endl;
-  
+
     delete[] ptr;
-    
+
     return 0;
 }
