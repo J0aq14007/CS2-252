@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1761743622 source:d:\ccomp2-2\cs2-252\estudiante_class\main.cpp
+	<iostream>
+	"Estudiante.h"
+
+1761743605 d:\ccomp2-2\cs2-252\estudiante_class\include\estudiante.h
+	<iostream>
+
