@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1761914189 source:d:\ccomp2-2\cs2-252\arregloenteros\main.cpp
+	<iostream>
+	"IntegerArray.h"
+
+1761914215 d:\ccomp2-2\cs2-252\arregloenteros\include\integerarray.h
+	<iostream>
+
+1761914059 source:d:\ccomp2-2\cs2-252\arregloenteros\src\integerarray.cpp
+	"IntegerArray.h"
+
