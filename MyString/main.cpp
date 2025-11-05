@@ -4,6 +4,9 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    IamString ms("ciencia");
+    cout<<ms.getSize()<<endl;
+    cout<<ms.ToUpper()<<endl;
+    cout<<ms.Tolower()<<endl;
     return 0;
 }

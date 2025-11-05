@@ -5,7 +5,13 @@
 class IamString
 {
     public:
-        IamString(char *data, int size);
+        IamString(char *data);
+        int getSize()const;
+        char* getData()const;
+
+        void ToUpper();
+        void ToLower();
+
         virtual ~IamString();
 
     private:

@@ -1,0 +1,18 @@
+#include <iostream>
+#include "DynamicIntegerArray.h"
+using namespace std;
+
+int main()
+{
+    DynamicIntegerArray curr;
+    cout<<curr.getSize()<<endl;
+
+    int arr[] = {1,2,4,5,6,7};
+    DynamicIntegerArray curr1(arr, 5);
+    cout<<curr1.getSize()<<endl;
+    curr1.print();
+
+    curr1.push_back(10);
+    curr1.print();
+    return 0;
+}
