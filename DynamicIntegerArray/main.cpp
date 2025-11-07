@@ -14,5 +14,8 @@ int main()
 
     curr1.push_back(10);
     curr1.print();
+
+    curr1.insert(100,3);
+    curr1.print();
     return 0;
 }
