@@ -1,12 +1,12 @@
-#include "DynamicIntegerArray.h"
+#include "DynamicArrayInt.h"
 
-DynamicIntegerArray::DynamicIntegerArray()
+DynamicArrayInt::DynamicArrayInt()
 {
     this->size =0;
     this->data = new int[size];
 }
 
-DynamicIntegerArray::DynamicIntegerArray(int arr[], int size){
+DynamicArrayInt::DynamicArrayInt(int arr[], int size){
 
     this->size =size;
     this->data = new int[size];
@@ -14,12 +14,23 @@ DynamicIntegerArray::DynamicIntegerArray(int arr[], int size){
         this->data[i] = arr[i];
     }
 }
-int  DynamicIntegerArray::getSize()const{
+
+DynamicArrayInt::DynamicArrayInt(DynamicArrayInt &o){
+
+    this->size = o.size;
+    this->data = new int [size];
+    for(int i=0; i<size; i++){
+        this->data[i] = o.data[i];
+    }
+
+}
+
+int  DynamicArrayInt::getSize()const{
 
     return size;
 }
 
-void DynamicIntegerArray::print()const{
+void DynamicArrayInt::print()const{
 
     std::cout<<"[ ";
     for(int i=0; i<size; i++){
@@ -29,10 +40,10 @@ void DynamicIntegerArray::print()const{
 
 }
 
-void DynamicIntegerArray::push_back(int val){
+void DynamicArrayInt::push_back(int val){
     int *tmp = new int[size+1];
     for(int i=0; i<size; i++){
-        tmp= this-> data[i];
+        tmp[i]= this-> data[i];
     }
     tmp[size] = val;
     size++;
@@ -41,7 +52,7 @@ void DynamicIntegerArray::push_back(int val){
 
 }
 
-void DynamicIntegerArray::insert(int val, int pos){
+void DynamicArrayInt::insert(int val, int pos){
     int *tmp = new int [size+1];
     for(int i=0; i<size; i++){
         tmp[i]= this->data[i];
@@ -53,7 +64,7 @@ void DynamicIntegerArray::insert(int val, int pos){
     size++; delete[] data; this->data = tmp;
 }
 
-void DynamicIntegerArray::remove(int pos){
+void DynamicArrayInt::remove(int pos){
 
      int *tmp = new int [size-1];
     for(int i=0; i<pos; i++){
@@ -68,7 +79,8 @@ void DynamicIntegerArray::remove(int pos){
 
 }
 
-DynamicIntegerArray::~DynamicIntegerArray()
+DynamicArrayInt::~DynamicArrayInt()
 {
     delete[] data;
 }
+

@@ -11,11 +11,19 @@ int main()
     DynamicIntegerArray curr1(arr, 5);
     cout<<curr1.getSize()<<endl;
     curr1.print();
+    cout<<endl;
 
     curr1.push_back(10);
     curr1.print();
+    cout<<endl;
 
     curr1.insert(100,3);
     curr1.print();
+    cout<<endl;
+
+    curr1.remove(1);
+    curr1.print();
+    cout<<endl;
+
     return 0;
 }

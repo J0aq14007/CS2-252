@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1762953078 source:d:\ccomp2-2\cs2-252\dynamicpointarray\main.cpp
+	<iostream>
+	"DynamicPointArray.h"
+
+1762953031 d:\ccomp2-2\cs2-252\dynamicpointarray\include\dynamicpointarray.h
+
+1762953324 source:d:\ccomp2-2\cs2-252\dynamicpointarray\src\dynamicpointarray.cpp
+	"DynamicPointArray.h"
+	<iostream>
+

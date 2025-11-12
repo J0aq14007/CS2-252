@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1762951225 source:d:\ccomp2-2\cs2-252\dynamicarrayint\main.cpp
+	<iostream>
+	"DynamicArrayInt.h"
+
+1762952084 d:\ccomp2-2\cs2-252\dynamicarrayint\include\dynamicarrayint.h
+	<iostream>
+

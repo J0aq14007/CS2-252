@@ -15,7 +15,7 @@ class DynamicIntegerArray
         void insert(int val, int pos);
         void remove(int pos)
 
-        virtual ~DynamicIntegerArray();
+         ~DynamicIntegerArray();
 
     private:
 
